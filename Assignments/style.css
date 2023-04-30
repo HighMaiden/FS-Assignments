@@ -103,10 +103,11 @@ footer {
   margin-bottom: 50px;
 }
 .submit {
+  border-radius: 10px;
   background-color: bisque;
   width: 150px;
   height: 50px;
-  color: white;
+  color: rgb(209, 98, 98);
 }
 .submit:hover {
   color: red;
@@ -119,6 +120,7 @@ footer {
 .top-button {
   text-align: right;
   margin-bottom: 30px;
+  margin-right: 10px;
 }
 .top-button a {
   border: 2px solid yellow;
