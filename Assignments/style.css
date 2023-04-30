@@ -116,6 +116,7 @@ footer {
 
 .submit:hover::after {
   content: "❤️";
+  
 }
 .top-button {
   text-align: right;
