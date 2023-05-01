@@ -6,16 +6,15 @@
   background-color: rgb(19, 30, 37);
 }
 header h1 {
-  text-shadow: 15px;
-  font-family: "Natural Toons", sans-serif;
+  /* text-shadow: 15px; */
+  /* font-family: "Natural Toons", sans-serif; */
   margin: 30px;
   font-size: 48px;
   font-family: "Bungee Shade", cursive;
   cursor: pointer;
   color: rgb(56, 204, 155);
 }
-.top-nav {
-}
+
 .top-nav a {
   text-decoration: none;
   color: rgb(177, 98, 98);
