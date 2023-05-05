@@ -34,6 +34,10 @@ main {
     width: 20%;
     text-align: center;
 }
+.sect .img-cards:hover{
+    width: 30%;
+    text-align: center;
+}
 .sect .img-cards img{
     padding: 3px;
     float: left;
