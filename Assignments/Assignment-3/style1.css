@@ -25,9 +25,10 @@ main {
 .sect{
     border: 2px solid rgb(31, 199, 157);
     width: 80%;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 4rem;
     float: left;
+    margin: 5px;
 }
 
 .sect .img-cards{
@@ -58,6 +59,7 @@ main {
     font-weight: 300;
     text-indent: 1rem;
     width: 80%;
+    
 }
 .Learn{
     float: right;
@@ -75,5 +77,5 @@ main {
 }
 .Learn:hover{
     color: blue;
-    outline: 3px solid coral;
+    outline: 5px solid coral;
 }
