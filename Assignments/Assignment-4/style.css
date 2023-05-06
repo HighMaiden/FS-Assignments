@@ -32,12 +32,14 @@
   padding: 4rem 5rem;
   background-color: black;
   color: beige;
+  line-height: 30px;
   
 }
 .writings h2 {
   background-color: rgb(5, 5, 5);
   color: rgb(255, 255, 255);
   padding: 2rem;
+ 
 }
 
 #section1 {
