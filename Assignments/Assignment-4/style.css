@@ -43,7 +43,7 @@ align-items: center;
 }
 
 #section1{
-    background-image: url(/Assignments/Assignment-4/Assets/img/forest_light_514954.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/bg.jpg);
     
 }
 #section1 h1{
@@ -62,7 +62,7 @@ align-items: center;
 
 
 #section2{
-    background-image: url(/Assignments/Assignment-4/Assets/img/lisbon_sunset_514529.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/bg2.jpg);
 }
 #section2 .opacity{
     text-align: center;
@@ -75,7 +75,7 @@ align-items: center;
 }
 
 #section3 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/raspberries_513266.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/bg3.jpg);
 }
 
 #section3 .opacity{
@@ -88,7 +88,7 @@ align-items: center;
     opacity: 0.4;
 }
 #section4 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/snow_monkeys_in_jigokudani_514314.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/bg4.jpg);
 }
 
 #section4 .opacity{
@@ -97,11 +97,11 @@ align-items: center;
     letter-spacing: 0.5rem;
     color: white;
     height: 150px;
-    width: 300px;
+    width: 60%px;
     opacity: 0.4;
 }
 #section5 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/storm_clouds_517373.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/bg1.jpg);
 }
 
 #section5 span{
