@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.section{
+height: 100vh;
+width: 100%;
+background-size: cover;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+#section1{
+    background-image: url(/Assignments/Assignment-4/Assets/img/galaxy1.jpg);
+    
+}
+#section1 h1{
+    color: white;
+}
+
+#section2 {
+    background-image: url(/Assignments/Assignment-4/Assets/img/galaxy2.jpg);
+}
+
+#section3 {
+    background-image: url(/Assignments/Assignment-4/Assets/img/earth.jpg);
+}
+#section4 {
+    background-image: url(/Assignments/Assignment-4/Assets/img/eu-continent.jpg);
+}
+#section5 {
+    background-image: url(/Assignments/Assignment-4/Assets/img/ams-sky.jpg);
+}
+#section6 {
+    background-image: url(/Assignments/Assignment-4/Assets/img/party.jpg);
+}
