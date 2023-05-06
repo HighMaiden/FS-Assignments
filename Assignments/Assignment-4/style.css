@@ -1,124 +1,117 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    box-sizing: border-box;
-    font-family: "Comic Neue", cursive;
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
 }
 
-.section{
-height: 100vh;
-width: 100%;
-background-size: cover;
-background-attachment: fixed;
-display: flex;
-justify-content: center;
-align-items: center;
-
+.section {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.writings{
-    background-color: black;
-    cursor: pointer;
+.writings {
+  background-color: black;
+  cursor: pointer;
 }
-.writings p:hover{
-    background-color: rgb(36, 36, 100);
-    color: pink;
+.writings p:hover {
+  background-color: rgb(36, 36, 100);
+  color: pink;
 }
-.writings h2:hover{
-    background-color: rgb(36, 36, 100);
-    color: pink;
+.writings h2:hover {
+  background-color: rgb(36, 36, 100);
+  color: pink;
 }
-.writings p{
-    text-align: center;
-    padding: 4rem 5rem;
-    background-color: black;
-    color: beige;
-
+.writings p {
+  text-align: center;
+  padding: 4rem 5rem;
+  background-color: black;
+  color: beige;
 }
-.writings h2{
-    background-color: rgb(5, 5, 5);
-    color: rgb(255, 255, 255);
-
-
+.writings h2 {
+  background-color: rgb(5, 5, 5);
+  color: rgb(255, 255, 255);
 }
 
-#section1{
-    background-image: url(/Assignments/Assignment-4/Assets/img/bg.jpg);
-    
+#section1 {
+  background-image: url(/Assignments/Assignment-4/Assets/img/bg.jpg);
 }
-#section1 h1{
-    background-color: rgb(243, 125, 198);
-    padding: 6rem;
-    border-radius: 10px ;
-    outline: 1rem inset purple;
-    /* outline-offset: 1rem; */
-    text-transform: uppercase;
-    line-height: 5rem;
-    color: rgb(255, 255, 255);
-    
-    width: 60%;
-    font-size: 4rem;
+#section1 h1 {
+  background-color: rgb(243, 125, 198);
+  padding: 6rem;
+  border-radius: 10px;
+  outline: 1rem inset purple;
+  /* outline-offset: 1rem; */
+  text-transform: uppercase;
+  line-height: 5rem;
+  color: rgb(255, 255, 255);
+
+  width: 60%;
+  font-size: 4rem;
 }
 
-
-#section2{
-    background-image: url(/Assignments/Assignment-4/Assets/img/bg2.jpg);
+#section2 {
+  background-image: url(/Assignments/Assignment-4/Assets/img/bg2.jpg);
 }
-#section2 .opacity{
-    text-align: center;
-    font-size: 3rem;
-    letter-spacing: 0.5rem;
-    color: white;
-    height: 150px;
-    width: 60%;
-    opacity: 0.8;
-    /* outline: 1rem inset purple; */
-    border-radius: 10px;
-    /* background-color: black; */
+#section2 .opacity {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: white;
+  height: 150px;
+  width: 60%;
+  opacity: 0.8;
+
+  border-radius: 10px;
 }
 
 #section3 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/bg3.jpg);
+  background-image: url(/Assignments/Assignment-4/Assets/img/bg3.jpg);
 }
 
-#section3 .opacity{
-    text-align: center;
-    font-size: 3rem;
-    letter-spacing: 0.5rem;
-    color: white;
-    height: 150px;
-    width: 300px;
-    opacity: 0.4;
-    outline: 1rem inset purple;
-    border-radius: 10px;
+#section3 .opacity {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: white;
+  height: 150px;
+  width: 300px;
+  opacity: 0.4;
+  outline: 1rem inset purple;
+  border-radius: 10px;
 }
 #section4 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/bg4.jpg);
+  background-image: url(/Assignments/Assignment-4/Assets/img/bg4.jpg);
 }
 
-#section4 .opacity{
-    text-align: center;
-    font-size: 3rem;
-    letter-spacing: 0.5rem;
-    color: white;
-    height: 150px;
-    width: 60%px;
-    opacity: 0.4;
-    outline: 1rem inset purple;
-    border-radius: 10px;
+#section4 .opacity {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: white;
+  height: 150px;
+  width: 60%px;
+  opacity: 0.4;
+  outline: 1rem inset purple;
+  border-radius: 10px;
 }
 #section5 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/bg1.jpg);
+  background-image: url(/Assignments/Assignment-4/Assets/img/bg1.jpg);
 }
 
-#section5 span{
-    background-color: rgb(163, 123, 123);
-    padding: 6rem;
-    border-radius: 10px;
-    outline: 0.5rem inset purple;
-    outline-offset: 1rem;
-    text-transform: uppercase;
-    line-height: 5rem;
-    color: white;
-    font-size: 5rem;
+#section5 span {
+  background-color: rgb(163, 123, 123);
+  padding: 6rem;
+  border-radius: 10px;
+  outline: 0.5rem inset purple;
+  outline-offset: 1rem;
+  text-transform: uppercase;
+  line-height: 5rem;
+  color: white;
+  font-size: 5rem;
 }
