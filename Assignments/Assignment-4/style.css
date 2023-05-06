@@ -71,9 +71,10 @@ align-items: center;
     color: white;
     height: 150px;
     width: 60%;
-    opacity: 0.4;
+    opacity: 0.8;
     outline: 1rem inset purple;
     border-radius: 10px;
+    /* background-color: black; */
 }
 
 #section3 {
