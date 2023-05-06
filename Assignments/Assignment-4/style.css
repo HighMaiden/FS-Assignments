@@ -54,8 +54,8 @@ align-items: center;
     /* outline-offset: 1rem; */
     text-transform: uppercase;
     line-height: 5rem;
-    color: rgb(0, 0, 0);
-    border: 2rem solid rgb(112, 29, 98);
+    color: rgb(255, 255, 255);
+    
     width: 60%;
     font-size: 4rem;
 }
@@ -107,8 +107,7 @@ align-items: center;
 #section5 span{
     background-color: rgb(163, 123, 123);
     padding: 6rem;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-radius: 10px;
     outline: 0.5rem inset purple;
     outline-offset: 1rem;
     text-transform: uppercase;
