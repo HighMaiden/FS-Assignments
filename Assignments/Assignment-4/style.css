@@ -70,8 +70,10 @@ align-items: center;
     letter-spacing: 0.5rem;
     color: white;
     height: 150px;
-    width: 300px;
+    width: 60%;
     opacity: 0.4;
+    outline: 1rem inset purple;
+    border-radius: 10px;
 }
 
 #section3 {
@@ -86,6 +88,8 @@ align-items: center;
     height: 150px;
     width: 300px;
     opacity: 0.4;
+    outline: 1rem inset purple;
+    border-radius: 10px;
 }
 #section4 {
     background-image: url(/Assignments/Assignment-4/Assets/img/bg4.jpg);
@@ -99,6 +103,8 @@ align-items: center;
     height: 150px;
     width: 60%px;
     opacity: 0.4;
+    outline: 1rem inset purple;
+    border-radius: 10px;
 }
 #section5 {
     background-image: url(/Assignments/Assignment-4/Assets/img/bg1.jpg);
@@ -114,7 +120,4 @@ align-items: center;
     line-height: 5rem;
     color: white;
     font-size: 5rem;
-}
-#section6 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/twilight_on_the_sunshine_coast_514662.jpg);
 }
