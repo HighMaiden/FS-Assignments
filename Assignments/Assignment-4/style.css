@@ -72,7 +72,7 @@ align-items: center;
     height: 150px;
     width: 60%;
     opacity: 0.8;
-    outline: 1rem inset purple;
+    /* outline: 1rem inset purple; */
     border-radius: 10px;
     /* background-color: black; */
 }
