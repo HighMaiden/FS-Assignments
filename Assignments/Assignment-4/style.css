@@ -48,7 +48,7 @@ align-items: center;
 }
 #section1 h1{
     background-color: rgb(243, 125, 198);
-    padding: 2rem;
+    padding: 6rem;
     border-radius: 10px ;
     outline: 1rem inset purple;
     /* outline-offset: 1rem; */
@@ -57,23 +57,64 @@ align-items: center;
     color: rgb(0, 0, 0);
     border: 2rem solid rgb(112, 29, 98);
     width: 60%;
+    font-size: 4rem;
 }
 
-#section1:hover{
 
-}
 #section2{
     background-image: url(/Assignments/Assignment-4/Assets/img/lisbon_sunset_514529.jpg);
+}
+#section2 .opacity{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: white;
+    height: 150px;
+    width: 300px;
+    opacity: 0.4;
 }
 
 #section3 {
     background-image: url(/Assignments/Assignment-4/Assets/img/raspberries_513266.jpg);
 }
+
+#section3 .opacity{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: white;
+    height: 150px;
+    width: 300px;
+    opacity: 0.4;
+}
 #section4 {
     background-image: url(/Assignments/Assignment-4/Assets/img/snow_monkeys_in_jigokudani_514314.jpg);
 }
+
+#section4 .opacity{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: white;
+    height: 150px;
+    width: 300px;
+    opacity: 0.4;
+}
 #section5 {
     background-image: url(/Assignments/Assignment-4/Assets/img/storm_clouds_517373.jpg);
+}
+
+#section5 span{
+    background-color: rgb(163, 123, 123);
+    padding: 6rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline: 0.5rem inset purple;
+    outline-offset: 1rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+    color: white;
+    font-size: 5rem;
 }
 #section6 {
     background-image: url(/Assignments/Assignment-4/Assets/img/twilight_on_the_sunshine_coast_514662.jpg);
