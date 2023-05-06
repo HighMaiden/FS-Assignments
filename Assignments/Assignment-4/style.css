@@ -3,6 +3,7 @@
     padding: 0;
     text-align: center;
     box-sizing: border-box;
+    font-family: "Comic Neue", cursive;
 }
 
 .section{
@@ -15,28 +16,65 @@ justify-content: center;
 align-items: center;
 
 }
+.writings{
+    background-color: black;
+    cursor: pointer;
+}
+.writings p:hover{
+    background-color: rgb(36, 36, 100);
+    color: pink;
+}
+.writings h2:hover{
+    background-color: rgb(36, 36, 100);
+    color: pink;
+}
+.writings p{
+    text-align: center;
+    padding: 4rem 5rem;
+    background-color: black;
+    color: beige;
+
+}
+.writings h2{
+    background-color: rgb(5, 5, 5);
+    color: rgb(255, 255, 255);
+
+
+}
 
 #section1{
-    background-image: url(/Assignments/Assignment-4/Assets/img/galaxy1.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/forest_light_514954.jpg);
     
 }
 #section1 h1{
-    color: white;
+    background-color: rgb(243, 125, 198);
+    padding: 2rem;
+    border-radius: 10px ;
+    outline: 1rem inset purple;
+    /* outline-offset: 1rem; */
+    text-transform: uppercase;
+    line-height: 5rem;
+    color: rgb(0, 0, 0);
+    border: 2rem solid rgb(112, 29, 98);
+    width: 60%;
 }
 
-#section2 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/galaxy2.jpg);
+#section1:hover{
+
+}
+#section2{
+    background-image: url(/Assignments/Assignment-4/Assets/img/lisbon_sunset_514529.jpg);
 }
 
 #section3 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/earth.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/raspberries_513266.jpg);
 }
 #section4 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/eu-continent.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/snow_monkeys_in_jigokudani_514314.jpg);
 }
 #section5 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/ams-sky.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/storm_clouds_517373.jpg);
 }
 #section6 {
-    background-image: url(/Assignments/Assignment-4/Assets/img/party.jpg);
+    background-image: url(/Assignments/Assignment-4/Assets/img/twilight_on_the_sunshine_coast_514662.jpg);
 }
