@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "DynaPuff", cursive;
 }
 
 
@@ -82,7 +83,7 @@ main p{
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: red;
     color: white;
     padding: 0.3rem;
