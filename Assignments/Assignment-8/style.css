@@ -83,11 +83,11 @@ main p{
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-color: red;
     color: white;
     padding: 0.3rem;
-    border-radius: 50%;
+    border-radius: 49%;
     
 }
 .slack:hover {

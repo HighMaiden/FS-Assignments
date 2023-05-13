@@ -64,3 +64,58 @@
 
 
 
+// var sum = 0;
+// for (var i = 3; i < 7; i++) {
+// sum += i;
+// if (i ===3 || sum > 10) {
+// continue;
+// }
+// console.log(i);
+// }
+
+// 
+
+// let prev1=0;
+// let prev2=1;
+// let curr;
+// let n = +prompt(`Fibonacci'nin hangi basamagini bulmaz istiyorsunuz?`)
+// for(let i=2;i<=n;i++){
+//     curr= prev1+prev2;
+//     prev1=prev2;
+
+// }
+
+// let num = prompt("Kaçıncı fibonacci sayısını öğrenmek istiyorsunuz?");
+// let sayi1 = 0;
+// let sayi2 = 1;
+// let toplam;
+// let Fibosayisi = [];
+
+// for(let i = 1; i < num; i++){
+//     toplam = sayi1 + sayi2;
+//     sayi1 = sayi2;
+//     sayi2 = toplam;
+//     Fibosayisi.push(toplam);
+// }        
+// console.log(`Fibonacci (${num}) : ${toplam}`);
+
+// let hak=3;
+// let pcSayi =Math.floor(Math.random() *100)+1
+// while(1) {
+    
+// }
+
+
+// function guessGame(){
+//     number = Math.floor(Math.random()*11);
+//     document.write(number);
+//     var guess = prompt("Guess a number: ");
+//         do {
+//             guess = prompt("Keep guessing!");
+//             if (number < guess) {
+//                 prompt("You've guessed too high!");
+//             } else if (number > guess) {
+//                 prompt("You've guessed too low!");
+//             } else document.write("Good Job!");
+//         } while (guess != number);
+//     }
