@@ -48,11 +48,15 @@ body{
 .nav-right .left a{
   color: black;
 }
+.left i{
+  cursor: pointer;
+}
 .left button{
   padding: 15px;
   border-radius: 20px;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 .main-container{
@@ -67,6 +71,7 @@ body{
   width: 500px;
   border-radius: 10px;
 }
+
 .main-left h1{
   font-size: 80px;
   font-style: italic;
@@ -76,4 +81,22 @@ body{
   font-size: 40px;
   font-style: italic;
 }
+.main-left button{
+  padding: 20px;
+  border-radius: 60px;
+  background-color: black;
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+}
 
+.main-left a{
+  color: black;
+  text-decoration: underline;
+  font-size: 25px;
+}
+.main-left p img{
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+}
