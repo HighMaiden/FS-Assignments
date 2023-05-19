@@ -65,6 +65,7 @@ body{
   justify-content: center;
   gap: 10rem;
   margin:30px ;
+  vertical-align: center  ;
 }
 
 .main-right img{
