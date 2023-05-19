@@ -11,7 +11,11 @@
   background: cover;
   background-size:100% ;
 } */ 
-
+body{
+  width: 1440px;
+  height: 1046px;
+  margin: auto;
+}
 
 .nav-container {
   display: flex;
@@ -50,3 +54,26 @@
   background-color: black;
   color: white;
 }
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10rem;
+  margin:30px ;
+}
+
+.main-right img{
+  width: 500px;
+  border-radius: 10px;
+}
+.main-left h1{
+  font-size: 80px;
+  font-style: italic;
+
+}
+.main-left p{
+  font-size: 40px;
+  font-style: italic;
+}
+
