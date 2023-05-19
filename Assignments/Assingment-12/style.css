@@ -5,11 +5,15 @@
   list-style: none;
   text-decoration: none;
 }
-body{
-  background-color: #fff;
-  /* background-image: url(./assets/img/images.jpg); */
-}
-.container {
+/* body{
+  /* background: url(./assets/img/pexels-mehmet-turgut-kirkgoz-14279172.jpg) ; */
+  /* background-size:1000px ;
+  background: cover;
+  background-size:100% ;
+} */ 
+
+
+.nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
