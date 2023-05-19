@@ -7,11 +7,11 @@
 }
 /* body{
   /* background: url(./assets/img/pexels-mehmet-turgut-kirkgoz-14279172.jpg) ; */
-  /* background-size:1000px ;
+/* background-size:1000px ;
   background: cover;
   background-size:100% ;
-} */ 
-body{
+} */
+body {
   width: 1440px;
   height: 1046px;
   margin: auto;
@@ -36,53 +36,83 @@ body{
   margin-right: 10px;
 }
 
-.nav-left img{
+.nav-left img {
   width: 100px;
   border-radius: 50%;
 }
 
-.nav-right .left{
+.nav-right .left {
   padding: 10px;
   margin: 10px;
 }
-.nav-right .left a{
+.nav-right .left a {
   color: black;
+  font-size: 2rem;
 }
-.left i{
+.left i {
   cursor: pointer;
+  font-size: 2rem;
 }
-.left button{
-  padding: 15px;
+.left button {
+  padding: 25px;
   border-radius: 20px;
   background-color: black;
   color: white;
   cursor: pointer;
 }
 
-.main-container{
+.main-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 10rem;
-  margin:30px ;
-  vertical-align: center  ;
+  margin: 30px;
+  vertical-align: center;
+}
+.main-right img {
+  width: 700px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+}
+.img-box {
+  width: 20rem;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  /* bottom: 0rem; */
+  left: 70rem;
+  top: 60rem;
+  /* margin-bottom:40px ; */
+}
+.img-box img {
+  /* margin-left: 10px; */
+  /* margin-bottom: 10px; */
+  width: 100%;
+  height: 100%;
+  /* height: 50px; */
+  align-items: center;
+  background-color: rgb(136, 173, 206);
+  outline: 10px solid rgb(136, 173, 206);
 }
 
-.main-right img{
-  width: 500px;
+.img-box p {
+  font-size: 30px;
+  background-color: rgb(136, 173, 206);
   border-radius: 10px;
 }
-
-.main-left h1{
+.main-left {
+  /* display: flex; */
+}
+.main-left h1 {
   font-size: 80px;
   font-style: italic;
-
 }
-.main-left p{
+.main-left p {
   font-size: 40px;
   font-style: italic;
 }
-.main-left button{
+.main-left button {
   padding: 20px;
   border-radius: 60px;
   background-color: black;
@@ -91,13 +121,19 @@ body{
   cursor: pointer;
 }
 
-.main-left a{
+.main-left a {
   color: black;
   text-decoration: underline;
   font-size: 25px;
 }
-.main-left p img{
+.main-left img {
   border-radius: 50px;
   width: 100px;
-  text-align: center;
+  margin-left: 27rem;
+  /* text-align: left; */
+  /* float: inline-end; */
+  /* margin-left:10px ; */
+}
+.main-left p span {
+  margin: 10px;
 }
