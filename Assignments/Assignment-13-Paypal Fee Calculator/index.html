@@ -16,25 +16,39 @@
 
     </header>
     <main>
-        <div>
-           
-            <section>
+        <div class="container">
+            
+      
+
+         <form id="payform" action="">
+            <section class="sect1">
                 <p>ENTER PAYMENT AMOUNT BELOW</p>
                 <br>
+                <div>
+                    <p id="result"> </p>
+                    <p id="result1"></p>
+                </div>
+                <br>
+
+
                 <label for="Number"><i class="fa-solid fa-euro-sign"></i></i></label>
-                <input type="number" name="Number" id="Number">
+
+                <input type="number" name="number" id="amount" value="100" > </input>
+            
+                <br>
                 <br>
                 
                 <label for="Select-Country">Country or Region(Currency)</label>
-                <select name="Select-Country" id="Select-Country">
+                <select class="Fee" name="Select-Country" id="Select-Country">
                     
                     <option value="">Netherlands</option>
                    
                     
-                </select class="Fee">
+                </select >
+                <br>
                 <br>
                 <label for="Fee-Type ">Fee Rate</label>
-                <select name="Fee type" id="Fee-Type">
+                <select  name="Fee type" id="feerate">
     
                     <optgroup id="" label="Domestic">
                         
@@ -56,13 +70,14 @@
                         <option value="10">1,5%+€,35</option>
                     </optgroup>
                 </select>
+            
+           
+            <br><br><br>
+            <button id="bnts" type="submit" oninput="getValue()">Submit</button>    
+            <button id="btnR" type="reset">Reset</button>
+           
             </section>
-            <section>
-                <button>Submit</button>
-                <button>Reset</button>
-                
-            </section>
-
+          </form> 
         </div>
 
     </main>
