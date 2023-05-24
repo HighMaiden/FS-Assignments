@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    /* background-color: rgb(122, 13, 13); */
+    background-image: linear-gradient(to right, red , rgb(255, 196, 0));
+    /* background-image: linear-gradient(180deg, red, yellow); */
+}
+h1{
+    color: black;
+    display: inline-block;
+}
+header{
+    margin-top: 30px;
+}
+header img{
+    vertical-align: middle;
+}
