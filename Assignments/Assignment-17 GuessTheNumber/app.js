@@ -1,6 +1,6 @@
 const input1 =document.querySelector('.input')
 const btn1 =document.querySelector('.btn')
-const input2 =document.querySelector('.sonuc')
+const sonuc =document.querySelector('.sonuc')
 const p =document.querySelector('p')
 const random = Math.floor(Math.random()*100)+1
 let counter =7
@@ -8,19 +8,26 @@ let counter =7
 
 btn1.addEventListener("click",()=>{
 if(counter>0){
-if(input1.value ==random){
+ if(input1.value ==random){
     sonuc.value =(`Kazandiniz`);
-}
-else if(input1.value > random){
+ }
+ else if(input1.value > random){
     sonuc.value =(`Daha kucuk bir sayi giriniz`);
-}
-else{
-sonuc.value=(` Daha buyuk bir sayi giriniz`);
-}
+
+ }
+ else{
+ sonuc.value=(` Daha buyuk bir sayi giriniz`);
+ }
 
     console.log(input1.value);
+ }
+counter--
+else {
+    p.innerHTML=`Hakkiniz kalmadi, Result: ${random}`
+   sonuc.value =`Game Over`
 }
-counter--}
-)
-
 p.innerHTML=`${counter} hakkiniz kaldi.`
+input1.focus()
+
+
+})
