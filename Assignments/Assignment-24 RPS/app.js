@@ -12,11 +12,18 @@ const scissorImg=document.getElementById("scissor")
 const yourChoiceDiv= document.getElementById("your-choice")
 const pcChoiceDiv= document.getElementById("pc-choice")
 const selectionArticle = document.querySelector(".selection")
-
+//?message
+const messagePar =document.querySelector(".message")
 //* ------- Variables ------- */
 let userSelectImg = document.createElement("img")
 let pcSelectImg = document.createElement("img")
+//?colors
+const Yellow= "#ffc538";
+const Red= "#fb778b";
+const Green="#5ab7ac";
+//?Score 
 
+const scoreCardSec = document.querySelector(".score-card")
 
 
 
@@ -40,15 +47,8 @@ selectionArticle.addEventListener("click",(e)=>{
 
 
 
-const createPcSelection = ()=>{
-const pcArr=["rock","paper","scissor"]
-const pcRandom=pcArr[Math.floor(Math.random()*3)]
-pcSelectImg.src =`./assets/${pcRandom}.png`
-pcSelectImg.alt = pcRandom
-pcChoiceDiv.appendChild(pcSelectImg)
 
-}
-
+//?ILKEL YONTEM
 // rockImg.addEventListener("click",()=>{
 
 // image.src="./assets/rock.png"
@@ -82,7 +82,30 @@ pcChoiceDiv.appendChild(pcSelectImg)
 
 //* ------- Functions ------- */
 
+const createPcSelection = ()=>{
+    const pcArr=["rock","paper","scissor"]
+    const pcRandom=pcArr[Math.floor(Math.random()*3)]
+    pcSelectImg.src =`./assets/${pcRandom}.png`
+    pcSelectImg.alt = pcRandom
+    pcChoiceDiv.appendChild(pcSelectImg)
+    
+    calculateResult()
+    
+    }
+const draw = ()=>{
+    messagePar.textContent ="it's a draw"
+scoreCardSec.style.color="Yellow"
+messagePar.style.backgroundColor = "Yellow"
+}
 
+    const calculateResult = ()=>{
+        // console.log(userSelectImg.alt);
+        // console.log(pcSelectImg.alt);
+        //?Esitlik durumu
+        if(userSelectImg.alt === pcSelectImg.alt){
+            draw()
 
+        }
+    }
 
 
