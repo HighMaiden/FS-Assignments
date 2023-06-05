@@ -18,11 +18,10 @@
         </p>
         <p class="description">Please make your selection</p>
 
-
         <article class="selection">
-          <img src="/Assignments/Assignment-24 RPS/assets/rock.png" alt="">
-          <img src="/Assignments/Assignment-24 RPS/assets/paper.png" alt="">
-          <img src="/Assignments/Assignment-24 RPS/assets/scissor.png" alt="">
+          <img src="/Assignments/Assignment-24 RPS/assets/rock.png" id="rock" alt="" />
+          <img src="/Assignments/Assignment-24 RPS/assets/paper.png" id="paper" alt="" />
+          <img src="/Assignments/Assignment-24 RPS/assets/scissor.png" id="scissor" alt="" />
         </article>
       </section>
       <section class="choice-section">
@@ -31,6 +30,17 @@
           <div id="pc-choice"></div>
         </article>
         <p class="message"></p>
+      </section>
+
+      <section class="modal-card">
+        <article class="modal">
+          <p>Game Over</p>
+
+          <p id="final-message">You Lost</p>
+
+          <button id="play-again">Play Again</button>
+
+        </article>
       </section>
     </main>
     <script src="./app.js"></script>
