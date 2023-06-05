@@ -10,10 +10,12 @@ const paperImg=document.getElementById("paper")
 const scissorImg=document.getElementById("scissor")
 //?Secilen Elemanlarin Tasiyicilari
 const yourChoiceDiv= document.getElementById("your-choice")
+const pcChoiceDiv= document.getElementById("pc-choice")
 const selectionArticle = document.querySelector(".selection")
 
 //* ------- Variables ------- */
 let userSelectImg = document.createElement("img")
+let pcSelectImg = document.createElement("img")
 
 
 
@@ -41,7 +43,9 @@ selectionArticle.addEventListener("click",(e)=>{
 const createPcSelection = ()=>{
 const pcArr=["rock","paper","scissor"]
 const pcRandom=pcArr[Math.floor(Math.random()*3)]
-
+pcSelectImg.src =`./assets/${pcRandom}.png`
+pcSelectImg.alt = pcRandom
+pcChoiceDiv.appendChild(pcSelectImg)
 
 }
 
