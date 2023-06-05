@@ -13,6 +13,10 @@ const scoreCardSection = document.querySelector(".score-card")
 const pcScoreSpan = document.getElementById("pc-score")
 const yourScoreSpan = document.getElementById("your-score")
 
+//?MODAL
+
+const modalCardSec =document.querySelector(".model-card")
+
 //* ------- Variables ------- */
 let userSelectImg = document.createElement("img")
 let pcSelectImg = document.createElement("img")
@@ -60,6 +64,9 @@ const calculateResult = () => {
       pcRandom === "scissor" ? youLost() : youWin()
     }
   }
+  if(pcScoreSpan.textContent === "10" || yourScoreSpan.textContent === "10"){
+    openModal()
+  }
 }
 
 const draw = () => {
@@ -80,4 +87,8 @@ const youWin = () => {
   scoreCardSection.style.color = GREEN
   messagePar.style.backgroundColor = GREEN
   yourScoreSpan.textContent++
+}
+
+const openModal = ()=>{
+    modalCardSec.classList.add("show")
 }
