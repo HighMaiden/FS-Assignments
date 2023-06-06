@@ -16,25 +16,63 @@
         <input id="gelir-ekle" class="col-11" type="text" />
         <button class="col-1 bg-warning">Ekle</button>
       </article>
-      <article class="row w-50 m-auto border border-black border-1">
+      <article
+        class="row w-50 m-auto border border-black border-1 mt-3 rounded-2 mb-3"
+      >
         <h2 class="text-center">Harcama Formu</h2>
         <div class="col-6">
           <p class="">Harcama Yapilan Yer</p>
           <select class="w-75" name="harcamalar" id="expenses">
-            <option value=""></option>
-            <option value="manav">manav</option>
-            <option value="kira">kira</option>
-            <option value="ev-giderleri">ev-giderleri</option>
-            <option value="faturalar">faturalar</option>
-            <option value="eglence">eglence</option>
+            <option value="" disabled selected hidden>
+              Fatura,Kira,Manav,etc..
+            </option>
+            <option value="manav">Manav</option>
+            <option value="kira">Kira</option>
+            <option value="ev-giderleri">Ev-giderleri</option>
+            <option value="faturalar">Faturalar</option>
+            <option value="eglence">Eglence</option>
           </select>
         </div>
         <div class="col-6">
-         <p>Tarih</p>>
-           <input type="datetime" name="" id="">
-            </div>
-
-      
+          <p>Tarih</p>
+          >
+          <input type="date" name="" id="" />
+        </div>
+        <article class="m-auto text-center mt-3">
+          <p>Harcanan Miktar</p>
+          <input class="col-12 mb-3 rounded-2" type="tel" />
+          <button class="p-2 m-auto mb-3 col-3 text-light bg-warning rounded-2">
+            Kaydet
+          </button>
+        </article>
+      </article>
+      <table class="table table-bordered w-50 text-center m-auto">
+        <thead>
+          <tr>
+            <th>Tarih</th>
+            <th>Harcanan Yer</th>
+            <th>Miktar</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <article class="m-auto w-50">
+        <section class="p-3 float-end w-100">
+          <p class="p-2 col-4 me-5 bg-info">Geliriniz: <span></span></p>
+          <p class="p-2 col-4 me-5 bg-warning">Gideriniz: <span></span></p>
+          <p class="p-2 col-4 me-5 bg-danger">Kalan: <span></span></p>
+        </section>
+      </article>
+      <article class="m-auto w-50 text-center mt-3">
+        <button class="p-2 bg-warning rounded-3">Bilgileri Temizle</button>
       </article>
     </section>
     <script src="script.js"></script>
