@@ -1,0 +1,15 @@
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.delete{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(115, 240, 156);
+}
+.par{
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(115, 233, 193);
+    border-radius: 10px;
+    transition: all 2s ease;
+}

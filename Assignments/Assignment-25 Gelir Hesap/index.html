@@ -6,15 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gelir Hesaplama📱</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
   </head>
-  <body >
-    <h1 class="text-center text-warning mt-2">AYLIK GIDER TAKIP UYGULAMASI</h1>
-    <p id="pop-up"></p>
-    <section class="container ">
+  <body>
+ 
+    <h1 id="h1" class="text-center text-warning mt-2">AYLIK GIDER TAKIP UYGULAMASI</h1>
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger">
+            <h5 class="modal-title">Modal title</h5>
+            <button id="modal-btn" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+        </div>
+    </div>
+  </div>
+   
+    <section class="container">
       <article class="row w-50 m-auto">
-        <input id="gelir-ekle" class="col-11" type="text" />
-        <button class="col-1 bg-warning">Ekle</button>
+        <input id="gelir" class="col-10 rounded-start-2" type="tel" />
+        <button
+          id="ekle"
+          class="col-2 bg-warning rounded-end-2 text-center text-light"
+        >
+          Ekle
+        </button>
       </article>
       <article
         class="row w-50 m-auto border border-black border-1 mt-3 rounded-2 mb-3 p-5"
@@ -22,60 +44,67 @@
         <h2 class="text-center mb-5">Harcama Formu</h2>
         <div class="col-6">
           <p class="">Harcama Yapilan Yer</p>
-          <select class="w-75" name="harcamalar" id="expenses">
-            <option value="" disabled selected hidden>
-              Fatura,Kira,Manav,etc..
-            </option>
-            <option value="manav">Manav</option>
-            <option value="kira">Kira</option>
-            <option value="ev-giderleri">Ev-giderleri</option>
-            <option value="faturalar">Faturalar</option>
-            <option value="eglence">Eglence</option>
-          </select>
+          <input
+          id="harcama-input"
+            class="w-75 rounded"
+            placeholder="Fatura,Kira,Market,etc.."
+            type="text"
+          />
         </div>
         <div class="col-6">
           <p>Tarih</p>
-          
-          <input type="date" name="" id="" />
+
+          <input class="rounded" type="date" name="" id="zaman" />
         </div>
         <article class="m-auto text-center mt-3">
           <p class="m-3">Harcanan Miktar</p>
-          <input class="col-12 mb-3  rounded-2" placeholder="100₺"  type="tel" />
-          <button class="p-2 m-auto mb-3 col-3 text-light bg-warning rounded-2">
+          <input id="harcanan-miktar" class="col-12 mb-3 rounded-2" placeholder="100₺" type="tel" />
+          <button
+            id="save"
+            class="p-2 m-auto mb-3 col-3 text-light bg-warning rounded-2"
+          >
             Kaydet
           </button>
         </article>
       </article>
       <table class="table table-bordered w-50 text-center m-auto">
         <thead>
-          <tr>
+          <tr id="tr">
             <th>Tarih</th>
             <th>Harcanan Yer</th>
             <th>Miktar</th>
             <th></th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+        <tbody id="tbody">
+
         </tbody>
       </table>
       <article class="m-auto w-50">
         <section class="p-3 float-end w-100">
-          <p class="p-2 col-4 me-5 bg-info">Geliriniz: <span></span></p>
-          <p class="p-2 col-4 me-5 bg-warning">Gideriniz: <span></span></p>
-          <p class="p-2 col-4 me-5 bg-danger">Kalan: <span></span></p>
+          <p class="p-2 col-4 me-5 bg-info">
+            Geliriniz: <span id="geliriniz"></span>
+          </p>
+          <p class="p-2 col-4 me-5 bg-warning">
+            Gideriniz: <span id="gideriniz"></span>
+          </p>
+          <p class="p-2 col-4 me-5 bg-danger">
+            Kalan: <span id="kalan"></span>
+          </p>
         </section>
       </article>
       <article class="m-auto w-50 text-center mt-3">
-        <button class="p-2 bg-warning rounded-3">Bilgileri Temizle</button>
+        <button id="temizle"  class="p-2 bg-info text-light rounded-3">
+          Bilgileri Temizle
+        </button>
       </article>
     </section>
+ 
     <script src="script.js"></script>
-    <script src="./assets/bootstrap/bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
