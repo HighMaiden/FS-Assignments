@@ -13,3 +13,10 @@ p{
     border-radius: 10px;
     transition: all 2s ease;
 }
+.del{
+    background-color: aqua;
+    color: red; 
+}
+.td{ 
+    text-align: center;
+}
