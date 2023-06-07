@@ -12,14 +12,15 @@
 <body>
     <header class="text-warning text-center display-5 my-4">AYLIK GIDER UYGULAMASI</header>
     <main class="container" style="max-width: 800px;">
-        <form  class="d-flex gap-2" action="">
+        <form  class="d-flex gap-2" id="ekle-form">
             <input 
             id="gelir-input"
              class="form-control"
               type="text" 
               min="0"
               autofocus 
-              placeholder="Gelirinizi Giriniz">
+              placeholder="Gelirinizi Giriniz"
+              required>
             <button id="ekle-btn" type="submit" class="btn btn-warning">Ekle</button>
         </form>
         <form id="harcama-form" class="row p-3 g-3 mt-4 m-0 border rounded-4">
