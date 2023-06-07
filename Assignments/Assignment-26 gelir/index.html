@@ -26,19 +26,19 @@
             <h4 class="text-center ">Harcama Formu</h4>
             <div class="col-6">
               <label for="harcama-alani" class="form-label">Harcama Alani</label>
-              <input type="text" class="form-control" id="harcama-alani" placeholder="Fatura,Kira,Manav,etc...">
+              <input type="text" class="form-control" id="harcama-alani" placeholder="Fatura,Kira,Manav,etc..." required>
             </div>
             <div class="col-6">
               <label for="tarih" class="form-label">Tarih</label>
-              <input type="password" class="form-control" id="tarih">
+              <input type="password" class="form-control" id="tarih" required>
             </div>
             <div class="col-12">
               <label for="miktar" class="form-label">Harcanan Miktar</label>
-              <input type="number" class="form-control" id="miktar" placeholder="1000 ₺">
+              <input type="number" class="form-control" id="miktar" placeholder="1000 ₺" required>
             </div>
             
             <div class="col-12 text-center">
-              <button type="submit" class="btn btn-warning ">Kaydet</button>
+              <button id="kaydet" type="submit" class="btn btn-warning ">Kaydet</button>
             </div>
           </form>
             <table id="harcama-tablosu" class="table table-bordered table-hover table-striped mt-4 text-center">
@@ -76,7 +76,9 @@
                 </tbody>
               </table>
 
-          
+          <section class="text-center">
+            <button class="btn btn-warning">Bilgileri Temizle</button>
+          </section>
     </main>
     <script src="script.js"></script>
 </body>
