@@ -1,0 +1,50 @@
+@mixin myImgBox($imgbgcolor,$imgcolor){
+    background-color: $imgbgcolor;
+    color: $imgcolor;
+}
+
+@mixin myNavbar($navbarBg,$navbarC){
+    font-family: $navbarFF;
+    font-size:$navbarFS ;
+    font-weight: 500;
+    color:$navbarC ;
+    line-height: 19px;
+    margin-right: 10px;
+    height: 19px;
+    width: 46px;
+    cursor: pointer;
+}
+
+@mixin myBtn($myBtnBg,$myBtnC){
+    background-color: $myBtnBg;
+    color: $myBtnC;
+    text-align:center;
+    width:90px;
+    height: 30px;
+    cursor: pointer;
+    font-family: $btnFF;
+    font-size: $btnFS;
+    font-weight: $btnFW;
+    border-radius: 8px;
+    transition: all 0s ease 0s;
+    border: none;
+    margin-left: 10px;
+    // padding: 1rem;
+    // line-height: 1rem;
+
+
+}
+@mixin mySect{
+    width: 1713px;
+    height: 650px;
+    display: flex;
+    margin-top: 2rem;
+    margin: auto;
+     
+}
+@mixin myImg{
+    width: 500px;
+    height: 500px;
+    min-width:auto ;
+    min-height: auto;
+}
