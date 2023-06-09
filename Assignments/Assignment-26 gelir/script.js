@@ -40,6 +40,8 @@ let harcamaListesi = [];
 ekleForm.addEventListener("submit", (e) => {
   e.preventDefault(); //?reload engellenir
   gelirler = Number(gelirInput.value) + Number(gelirler); //? string eklemeyi engelledik
+
+  
   //?GELIRLERIN KALICI OLMASI ICIN LOCALSTORAGE'E KOPYALADIK
 
   localStorage.setItem("gelirler", gelirler);
