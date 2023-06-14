@@ -3,7 +3,9 @@
 let shipping = 25;
 let tax = 0;
 let total = 0;
-let products = [];
+let products1 = [];
+let products2 = [];
+let products3 = [];
 
 const items = document.querySelector(".items");
 const p1_name = document.querySelector(".p1_name");
@@ -40,22 +42,22 @@ items.addEventListener("click", (e) => {
     };
     const itemname =document.querySelector('.itemname')
     if (count1 == 1  & !itemname) {
-      products.push(ItemInfo1);
-      localStorage.setItem("products", JSON.stringify(products));
+      products1.push(ItemInfo1);
+      localStorage.setItem("products1", JSON.stringify(products1));
         tablo(ItemInfo1)
     } else if (count1 >= 1) {
    
       
-      products.itemCount= Number(count1)
-      products.itemPrice = Number(count1) * Number(p1_price.textContent);
-      localStorage.setItem("products", JSON.stringify(products));
-      console.log(products);
+      products1[0].itemCount= Number(count1)
+      products1[0].itemPrice = Number(count1) * Number(p1_price.textContent);
+      localStorage.setItem("products1", JSON.stringify(products1));
+      console.log(products1[0]);
         
      
-      tablo(products.ItemInfo1)
+      
 
     }
-  ;
+  tablo(ItemInfo1);
     
   } else if (e.target.classList.contains("p2-btn")) {
     count2++;
@@ -68,13 +70,13 @@ items.addEventListener("click", (e) => {
     };
     // console.log(count);
     if (count2 == 1) {
-      products.push(ItemInfo2);
-      localStorage.setItem("products", JSON.stringify(products));
+      products2.push(ItemInfo2);
+      localStorage.setItem("products2", JSON.stringify(products2));
     } else if (count2 > 1) {
       ItemInfo2.itemCount = Number(count2);
       ItemInfo2.itemPrice = Number(count2) * Number(p2_price.textContent);
 
-      localStorage.setItem("products", JSON.stringify(products));
+      localStorage.setItem("products2", JSON.stringify(products2));
     }
     // tablo(products2[0]);
     tablo(ItemInfo2);
@@ -90,13 +92,13 @@ items.addEventListener("click", (e) => {
     };
     // console.log(count);
     if (count3 == 1) {
-      products.push(ItemInfo3);
-      localStorage.setItem("products", JSON.stringify(products));
+      products3.push(ItemInfo3);
+      localStorage.setItem("products3", JSON.stringify(products3));
     } else if (count3 > 1) {
       ItemInfo3.itemCount = Number(count3);
       ItemInfo3.itemPrice = Number(count3) * Number(p3_price.textContent);
 
-      localStorage.setItem("products", JSON.stringify(products));
+      localStorage.setItem("products3", JSON.stringify(products3));
     }
     
     tablo(ItemInfo3);
