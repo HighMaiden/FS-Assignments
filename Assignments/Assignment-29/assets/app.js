@@ -6,7 +6,7 @@ let total = 0;
 let products1 = [];
 let products2 = [];
 let products3 = [];
-
+// const p1=document.getElementById("p1")
 const items = document.querySelector(".items");
 const p1_name = document.querySelector(".p1_name");
 const p1_img = document.querySelector(".p1_img");
@@ -26,12 +26,20 @@ let count1 = 0;
 let count2 = 0;
 let count3 = 0;
 
-
+let bos=[]
 
 //?Item ekle btn
 items.addEventListener("click", (e) => {
-  if (e.target.classList.contains("p1-btn")) {
-  
+  console.log(e.target);
+  if(bos.includes("p1-btn")){
+    count1++
+    document.getElementById("p1").innerText=count1
+    
+  }
+  else { 
+    if (e.target.classList.contains("p1-btn")) {
+    bos.push("p1-btn")
+  // const itemname =document.querySelector('.itemname')
     count1++;
     let ItemInfo1 = {
       id: new Date().getTime(),
@@ -40,11 +48,11 @@ items.addEventListener("click", (e) => {
       itemPrice: p1_price.textContent,
       itemCount: count1,
     };
-    const itemname =document.querySelector('.itemname')
-    if (count1 == 1  & !itemname) {
+    
+    if (count1 == 1 ) {
       products1.push(ItemInfo1);
       localStorage.setItem("products1", JSON.stringify(products1));
-        tablo(ItemInfo1)
+        
     } else if (count1 >= 1) {
    
       
@@ -58,53 +66,58 @@ items.addEventListener("click", (e) => {
 
     }
   tablo(ItemInfo1);
-    
-  } else if (e.target.classList.contains("p2-btn")) {
-    count2++;
-    let ItemInfo2 = {
-      id: new Date().getTime(),
-      itemName: p2_name.textContent,
-      itemImg: p2_img.src,
-      itemPrice: p2_price.textContent,
-      itemCount: count2,
-    };
-    // console.log(count);
-    if (count2 == 1) {
-      products2.push(ItemInfo2);
-      localStorage.setItem("products2", JSON.stringify(products2));
-    } else if (count2 > 1) {
-      ItemInfo2.itemCount = Number(count2);
-      ItemInfo2.itemPrice = Number(count2) * Number(p2_price.textContent);
 
-      localStorage.setItem("products2", JSON.stringify(products2));
-    }
-    // tablo(products2[0]);
-    tablo(ItemInfo2);
-  } else if (e.target.classList.contains("p3-btn")) {
-    count3++;
-
-    let ItemInfo3 = {
-      id: new Date().getTime(),
-      itemName: p3_name.textContent,
-      itemImg: p3_img.src,
-      itemPrice: p3_price.textContent,
-      itemCount: count3,
-    };
-    // console.log(count);
-    if (count3 == 1) {
-      products3.push(ItemInfo3);
-      localStorage.setItem("products3", JSON.stringify(products3));
-    } else if (count3 > 1) {
-      ItemInfo3.itemCount = Number(count3);
-      ItemInfo3.itemPrice = Number(count3) * Number(p3_price.textContent);
-
-      localStorage.setItem("products3", JSON.stringify(products3));
-    }
-    
-    tablo(ItemInfo3);
   }
+}
+})
+ 
+    
+//   } else if (e.target.classList.contains("p2-btn")) {
+//     count2++;
+//     let ItemInfo2 = {
+//       id: new Date().getTime(),
+//       itemName: p2_name.textContent,
+//       itemImg: p2_img.src,
+//       itemPrice: p2_price.textContent,
+//       itemCount: count2,
+//     };
+//     // console.log(count);
+//     if (count2 == 1) {
+//       products2.push(ItemInfo2);
+//       localStorage.setItem("products2", JSON.stringify(products2));
+//     } else if (count2 > 1) {
+//       ItemInfo2.itemCount = Number(count2);
+//       ItemInfo2.itemPrice = Number(count2) * Number(p2_price.textContent);
+
+//       localStorage.setItem("products2", JSON.stringify(products2));
+//     }
+//     // tablo(products2[0]);
+//     tablo(ItemInfo2);
+//   } else if (e.target.classList.contains("p3-btn")) {
+//     count3++;
+
+//     let ItemInfo3 = {
+//       id: new Date().getTime(),
+//       itemName: p3_name.textContent,
+//       itemImg: p3_img.src,
+//       itemPrice: p3_price.textContent,
+//       itemCount: count3,
+//     };
+//     // console.log(count);
+//     if (count3 == 1) {
+//       products3.push(ItemInfo3);
+//       localStorage.setItem("products3", JSON.stringify(products3));
+//     } else if (count3 > 1) {
+//       ItemInfo3.itemCount = Number(count3);
+//       ItemInfo3.itemPrice = Number(count3) * Number(p3_price.textContent);
+
+//       localStorage.setItem("products3", JSON.stringify(products3));
+//     }
+    
+//     tablo(ItemInfo3);
+//   }
   
-});
+// });
 
 
 
@@ -131,7 +144,7 @@ const tablo = ({ itemImg, itemCount, itemPrice, itemName }) => {
             <div class="main__quantity-controller">
 
                 <i class="fa-solid fa-minus"></i>
-                <p>${itemCount}</p>
+                <p id="p1">${itemCount}</p>
                 <i class="fa-solid fa-plus"></i>
 
             </div>
