@@ -1,70 +1,49 @@
-const qrData = document.getElementById('qrData')
-const test = document.getElementById('test')
+//*************SELECTOR**************
 
-const frm = document.querySelector('.frm')
+const frm= document.querySelector(".frm")
+const qrData=document.getElementById("qrData")
+const qrCodes= document.getElementById("qrCodes")
 
-const qrCode = document.querySelector('.qr_code')
+frm.addEventListener("submit",(e)=>{
 
+e.preventDefault();
+createQR(qrData.value)
 
-const err="Something Wrong !"
-
-//? ADDEVENTLİSTENER İLE TEKTİKLEME YAP
-frm.addEventListener('submit', (e)=>{
-
-    e.preventDefault()
-
-    
-
-    //qrcode oluştur
-    createQR(qrData.value)
-
-    
 
 })
 
 
-//? QR CODE OLUŞTUR
-const createQR=(talep)=>{
-
-    fetch(`https://api.qrserver.com/v1/create-qr-code/?size150x150=&data=${talep}`)
-    .then((response)=>{
+let ader =" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="
 
 
-        if(!response.ok){
 
-            domaHataYaz()
-        }
+const createQR=(request)=>{
 
-        return response
+fetch(`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${request}`)
+.then((res)=>{
+    if(!res.ok){
+        throw new Error("There is an Error")
+    }
+    else{
+        return res
+    }
+}).then((data)=>{
 
-    }).then((data) => domaYaz(data.url))
+domaYaz(data.url)
 
 }
+)
 
 
-
-
-//? QR CODE ÇIKTISINI DOMA YAZ
-const domaYaz=(data)=>{
-
-    qrCode.innerHTML +=`
-    
-    <a href="${data}" download target="_blank"><img src="${data}" alt="qrcode"></a>
-    <p id="data">Data : ${qrData.value}</p>
-
-    `
-
-    qrData.value = ""
 }
+const domaYaz =(gelenData)=>{
 
-//? QR CODE ÇIKTISINI DOMA YAZ
-const domaHataYaz=()=>{
+qrCodes.innerHTML +=`
 
-    
+<a href="${gelenData}" download="" target="_blank"><img src="${gelenData}" alt=""></a>
 
-    qrCode.innerHTML +=`
-    
-    <p id="data">${err}</p>
+`
+qrData.value=""
+qrData.focus()
 
-    `
 }
