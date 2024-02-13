@@ -1,51 +1,47 @@
-const  form =document.querySelector("form")
-const input = document.querySelector("form #input-alani")
+const form = document.querySelector("form");
+const input = document.querySelector("form #input-alani");
 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  // input.value = "";
+  // form.reset();
+  // e.target.reset();
 
-
-
-form.addEventListener("submit",(e)=>{
-    e.preventDefault()
-    // input.value = "";
-    // form.reset();
-    // e.target.reset();
-
-
-    getData()
-    e.currentTarget.reset();
-    // console.log(e.target);
-})
-
+  getData();
+  e.currentTarget.reset();
+  // console.log(e.target);
+});
 
 // const getData = async function(){
 // }
 //! apikey ve degiskenleri degismesin diye degerlere atadik sakladik
-const getData = async ()=>{
-const API_KEY= "ae5ff8fa1ea9c977cc377bcb617ad3d0"
-const CityName= input.value
-const units = "metric"
-const lang = "en"
-const URL = `"https://api.openweathermap.org/data/2.5/weather?q=${CityName}&appid=${API_KEY}&units=${units}&lang=${lang}" `
-try {
-    const res = await fetch(URL)
-    if(!res.ok){
-        throw new Error(`There is an Error ${res.status}`)
+const getData = async () => {
+  const API_KEY = "ae5ff8fa1ea9c977cc377bcb617ad3d0";
+  const CityName = input.value;
+  const units = "metric";
+
+  const URL = `"https://api.openweathermap.org/data/2.5/weather?q=${CityName}&appid=${API_KEY}&units=${units}&lang=en" `;
+  try {
+    const res = await fetch(URL);
+    if (!res.ok) {
+      throw new Error(`There is an Error ${res.status}`);
     }
-    const data = await res.json()
-    weatherDataDom(data)
-    
-} catch (error) {
-    
-}
-}
+    const data = await res.json();
+    weatherDataDom(data);
+  } catch (error) {}
+};
 
+const weatherDataDom = (data) => {
+  const {
+    name,
+    sys: { country },
+    main: { temp, feels_like, humidity },
+    weather: [{ main, description, icon }],
+    wind: { speed },
+  } = data;
 
-
-const weatherDataDom=(data)=>{
-const{name, sys:{country},main:{temp,feels_like,humidity},weather:[{main,description,icon}], wind:{speed}}=data
-
-const container = document.querySelector(".container");
-container.innerHTML = `
+  const container = document.querySelector(".container");
+  container.innerHTML = `
 <div class="card p-4 " style="width: 18rem;">
 <!--* Resim Alanı -->
 <img src="${icon}" class="card-img-top" alt="...">
@@ -93,8 +89,5 @@ container.innerHTML = `
 </div>
 
 </div>
-`
-}
-
-
-
+`;
+};
