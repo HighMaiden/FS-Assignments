@@ -33,17 +33,15 @@
   background-color: black;
   color: beige;
   line-height: 30px;
-  
 }
 .writings h2 {
   background-color: rgb(5, 5, 5);
   color: rgb(255, 255, 255);
   padding: 2rem;
- 
 }
 
 #section1 {
-  background-image: url(/Assignments/Assignment-4/Assets/img/bg.jpg);
+  background-image: url(.Assets/img/bg.jpg);
 }
 #section1 h1 {
   background-color: rgb(243, 125, 198);
@@ -60,7 +58,7 @@
 }
 
 #section2 {
-  background-image: url(/Assignments/Assignment-4/Assets/img/bg2.jpg);
+  background-image: url(./Assets/img/bg2.jpg);
 }
 #section2 .opacity {
   text-align: center;
@@ -74,7 +72,7 @@
 }
 
 #section3 {
-  background-image: url(/Assignments/Assignment-4/Assets/img/bg3.jpg);
+  background-image: url(./Assets/img/bg3.jpg);
 }
 
 #section3 .opacity {
@@ -89,7 +87,7 @@
   border-radius: 10px;
 }
 #section4 {
-  background-image: url(/Assignments/Assignment-4/Assets/img/bg4.jpg);
+  background-image: url(./Assets/img/bg4.jpg);
 }
 
 #section4 .opacity {
@@ -104,7 +102,7 @@
   border-radius: 10px;
 }
 #section5 {
-  background-image: url(/Assignments/Assignment-4/Assets/img/bg1.jpg);
+  background-image: url(./Assets/img/bg1.jpg);
 }
 
 #section5 span {
